@@ -1,0 +1,36 @@
+<html>
+ <link rel="stylesheet" type="text/css" href="style.css">
+<head>
+   
+    <script type="text/javascript">
+        function msg () {
+            var emp=new Array("When a new day begins, dare to smile gratefully.",
+
+"When there is darkness, dare to be the first to shine a light.",
+
+"When there is injustice, dare to be the first to condemn it.",
+
+"When something seems difficult, dare to do it anyway.",
+
+"When life seems to beat you down, dare to fight back.",
+
+"When there seems to be no hope, dare to find some.",
+
+"When you’re feeling tired, dare to keep going.",
+
+"When times are tough, dare to be tougher."
+);
+            var c=new Array("black","blue","red","green","yellow","violet","teal");
+            var k=Math.floor((Math.random()*emp.length)+1);
+            var k1=Math.floor((Math.random()*c.length)+1);
+            document.write("<center><p>quotes: " + emp[k1%emp.length].fontcolor(c[k1]).big() + "</p></center>");
+            document.write("<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>")
+            document.write("<center><p>quotes: " + emp[k%emp.length].fontcolor(c[k]).big() + "</p></center>");
+            //document.write("<div class='contentouterd' id='quot2'> "+c[k1]+"</div>");
+        }
+        msg();
+    </script>
+</head>
+<body background="images.jpg">
+</body>
+</html>

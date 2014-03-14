@@ -1,0 +1,20 @@
+<html>
+<body>
+<script type="text/javascript">
+function doBlink() {
+  // Blink, Blink, Blink...
+  var blink = document.all.tags("BLINK")
+  for (var i=0; i < blink.length; i++)
+    blink[i].style.visibility = blink[i].style.visibility == "" ? "hidden" : "" 
+}
+
+function startBlink() {
+
+  if (document.all)
+    setInterval("doBlink()",500)
+}
+window.onload = startBlink;
+</script>
+<input type="Button" value="hii" onclick="doBlink()"/>
+</body>
+</html>

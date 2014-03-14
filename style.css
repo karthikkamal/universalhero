@@ -1,0 +1,94 @@
+div.main{
+	background-color: blue;
+	width: 100%;
+	height: 100px;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+	text-decoration: blink;
+	text-align: center;
+	font-size: 59px;
+	color: red;
+	opacity: 0.6;
+	border-radius: 13px;
+}
+ 
+div.menus{
+	background-color: red;
+	width: 100%;
+	height: 50px;
+	opacity: 0.5;
+ 
+	margin-top: 12px;
+	margin-left: 15px;
+	border-color: violet;
+	border-radius: 13px;
+}
+ 
+div.options{
+	font-size: 20px;
+	color: blue;
+	margin-top: 15px;
+	margin-left:30px;
+	float: left;
+}
+ 
+div.options2{
+	font-size: 20px;
+	color: blue;
+	float: right;
+	margin-top: 15px;
+	height: 100%;
+	margin-right: 30px;
+}
+ 
+div.contentouter{
+	background-color: yellow;
+	color: red;
+	opacity: 0.7;
+	width: 100%;
+	height: auto;
+	float: left;
+	border-radius: 19px;
+	display: block;
+}
+ 
+div.contentinner{
+	opacity: 0.6;
+	width: 50%;
+	min-height: 5px;
+	max-height: 100%;
+	height: auto;
+	float: left;
+	color: red;
+	display: block;
+}
+ 
+ 
+div.contentouter2{
+	background-color: yellow;
+	color: red;
+	width: 100%;
+	font-size: 39px;
+	margin-left: 10px;
+	margin-top: 10px;
+	height: auto;
+	float: left;
+	border-radius: 19px;
+	display: block;
+}
+ 
+div.contentouterd{
+	background-color: yellow;
+	color: red;
+	width: 100%;
+	font-size: 39px;
+	margin-left: 10px;
+	margin-top: 350px;
+	height: auto;
+	float: left;
+	border-radius: 19px;
+	display: block;
+}
+ 

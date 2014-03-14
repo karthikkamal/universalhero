@@ -1,0 +1,68 @@
+<html>
+<script>
+function name1()
+{
+var x=document.forms["myForm"]["fname"].value;
+if (x==null || x=="")
+  {
+  alert("First name must be filled out");
+  return false; 
+  }
+
+var x1=document.forms["myForm"]["f1name"].value;
+if (x1==null || x1=="")
+  {
+  alert("last name must be filled out");
+  return false;
+  }
+var x=document.forms["myForm"]["email"].value;
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+  {
+  alert("Not a valid e-mail address");
+  return false;
+  }
+ var x4=document.forms["myForm"]["ph"].value;
+ if(x4.length!=10){
+  		alert("not a valid number");
+  		return false; 
+  	}
+
+ var x5=document.forms["myForm"]["fss"].value;
+if (x5==null || x5=="")
+  {
+  alert("Enter password");
+   return false;
+  } 
+  var x6=document.forms["myForm"]["fss1"].value;
+if (x5!=x6)
+  {
+  alert("Enter correct password");
+   return false;
+  } 	
+  return true;
+}
+</script>
+<body background="image.jpg">
+<form name="myForm" action="http://www.facebook.com" onsubmit="return name1()" method="post">
+First Name: <input type="text" name="fname">
+Last Name : <input type="text" name="f1name">
+<br/>
+<br/> 
+Email     : <input type="text" name="email">
+<br/>
+<br/>
+mobile no : <input type="number" name="ph">
+<br/>
+<br/>
+password : <input type="password" name="fss">
+<br/>
+<br/>
+confirm password : <input type="password" name="fss1">
+<br/>
+<br/>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
